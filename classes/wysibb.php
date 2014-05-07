@@ -20,7 +20,7 @@ class wysibb
 	static function __dev()
 	{
 		require '../../../autoload.php';
-		jquery_plugin::load('wysibb', NULL, 'balancer/bors-3rd-wysibb');
+		jquery_plugin::load('wysibb');
 		var_dump();
 	}
 }
