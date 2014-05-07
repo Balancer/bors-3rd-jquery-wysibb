@@ -16,4 +16,11 @@ class wysibb
 //		$theme = http://cdn.wysibb.com/css/default/wbbtheme.css;
 		bors_page::add_template_data_array('head_append', "<link rel=\"stylesheet\" href=\"{$theme}\" />");
 	}
+
+	static function __dev()
+	{
+		require '../../../autoload.php';
+		jquery_plugin::load('wysibb', NULL, 'balancer/bors-3rd-wysibb');
+		var_dump();
+	}
 }
