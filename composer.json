@@ -1,0 +1,46 @@
+{
+	"name": "balancer/bors-3rd-wysibb",
+	"description": "WysiBB support in BORS© Framework",
+	"license": "MIT",
+
+	"authors": [
+		{
+			"name": "Balancer",
+			"email": "balancer@balancer.ru"
+		}
+	],
+
+	"require": {
+		"atelierspierrot/assets-manager": "1.*",
+        "balancer/bors-core": "@dev"
+	},
+
+	"type": "bors-assets",
+
+    "autoload": {
+		"classmap": ["classes/"]
+    },
+
+	"extra": {
+		"assets-presets": {
+			"jquery.wysibb": {
+				"css": "/wysibb/theme/default/wbbtheme.css",
+				"require": [
+					"/wysibb/theme/fonts/wysibbiconfont-wb.eot",
+					"/wysibb/theme/fonts/wysibbiconfont-wb.ttf",
+					"/wysibb/theme/fonts/wysibbiconfont-wb.woff",
+					"/wysibb/lang/ar.js",
+					"/wysibb/lang/cn.js",
+					"/wysibb/lang/de.js",
+					"/wysibb/lang/fr.js",
+					"/wysibb/lang/pl.js",
+					"/wysibb/lang/ru.js",
+					"/wysibb/lang/tr.js",
+					"/wysibb/lang/ua.js",
+					"/wysibb/lang/vn.js",
+					"/wysibb/preset/phpbb3.js" ],
+				"jsfiles_footer": "/wysibb/jquery.wysibb.min.js"
+			}
+		}
+	}
+}
