@@ -19,9 +19,5 @@
 
     "autoload": {
 		"classmap": ["classes/"]
-    },
-
-	"extra": {
-		"package-asset-dir": "htdocs"
-	}
+    }
 }
