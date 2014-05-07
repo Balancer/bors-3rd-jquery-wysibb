@@ -15,12 +15,13 @@
         "balancer/bors-core": "@dev"
 	},
 
-	"type": "asset",
+	"type": "asset-aware",
 
     "autoload": {
 		"classmap": ["classes/"]
     },
 
 	"extra": {
+		"package-asset-dir": "htdocs",
 	}
 }
