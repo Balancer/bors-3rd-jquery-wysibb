@@ -11,36 +11,16 @@
 	],
 
 	"require": {
-		"atelierspierrot/assets-manager": "1.*",
+		"libra/libra-assets-installer": "*",
         "balancer/bors-core": "@dev"
 	},
 
-	"type": "bors-assets",
+	"type": "asset",
 
     "autoload": {
 		"classmap": ["classes/"]
     },
 
 	"extra": {
-		"assets-presets": {
-			"jquery.wysibb": {
-				"css": "/theme/default/wbbtheme.css",
-				"require": [
-					"/theme/fonts/wysibbiconfont-wb.eot",
-					"/theme/fonts/wysibbiconfont-wb.ttf",
-					"/theme/fonts/wysibbiconfont-wb.woff",
-					"/lang/ar.js",
-					"/lang/cn.js",
-					"/lang/de.js",
-					"/lang/fr.js",
-					"/lang/pl.js",
-					"/lang/ru.js",
-					"/lang/tr.js",
-					"/lang/ua.js",
-					"/lang/vn.js",
-					"/preset/phpbb3.js" ],
-				"jsfiles_footer": "/jquery.wysibb.min.js"
-			}
-		}
 	}
 }
