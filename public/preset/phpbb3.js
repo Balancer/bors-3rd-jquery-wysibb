@@ -1,6 +1,6 @@
 WBBPRESET = {
 	bodyClass: "content content-phpbb3",
-	buttons: 'bold,italic,underline,|,quote,code,bullist,numlist,|,img,link,smilebox,fontsize,fontcolor',
+	buttons: 'bold,italic,underline,|,quote,code,bullist,numlist,|,img,attach,link,smilebox,fontsize,fontcolor',
 	traceTextarea: true,
 	allButtons: {
 		quote: {
@@ -150,7 +150,7 @@ function fileModal() {
 			validation: ".*$"
 		});
 		
-		if ($.browser.msie) {
+		if ($.browser && $.browser.msie) {
 			//ie not posting form by security reason, show default file upload
 			$.log("IE not posting form by security reason, show default file upload");
 			this.$modal.find("#nicebtn").hide();

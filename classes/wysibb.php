@@ -7,7 +7,7 @@
 
 class wysibb
 {
-	static function init($element, $attrs = array())
+	static function appear($element, $attrs = array())
 	{
 		jquery::load();
 
@@ -19,9 +19,10 @@ class wysibb
 
 		bors_use('http://cdn.wysibb.com/js/jquery.wysibb.min.js');
 		bors_use('http://cdn.wysibb.com/css/default/wbbtheme.css');
-		bors_use('http://cdn.wysibb.com/lang/ru.ru');
+		bors_use('http://cdn.wysibb.com/lang/ru.js');
+//		bors_use('/_bors-assets/balancer/bors-3rd-jquery-wysibb/preset/phpbb3.js');
 
-		$attrs = blib_json::encode_jsfunc($attrs);
+		$attrs = $attrs ? blib_json::encode_jsfunc($attrs) : '';
 		jquery::on_ready("\$('$element').wysibb($attrs);");
 //		$theme = config('bower.path')."/jqjquery-wysibb/theme/default/wbbtheme.css";
 //		$theme = http://cdn.wysibb.com/css/default/wbbtheme.css;
