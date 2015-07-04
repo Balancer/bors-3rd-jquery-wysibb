@@ -26,6 +26,7 @@
 
 	"extra": {
 		"component": {
+			"package-asset-dir": "public",
 			"scripts": [
 				"public/jquery.wysibb.js"
 			],
