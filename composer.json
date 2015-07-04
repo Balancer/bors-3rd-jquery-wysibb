@@ -24,8 +24,11 @@
 
     "extra": {
         "component": {
+            "scripts": [
+                "jquery.wysibb.js"
+            ],
             "files": [
-                "public/*"
+                "public/lang/*"
             ]
         }
     }
