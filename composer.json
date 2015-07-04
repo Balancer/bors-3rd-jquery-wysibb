@@ -12,33 +12,34 @@
 
 	"require": {
 		"libra/libra-assets-installer": "*",
-        "robloach/component-installer": "*",
-        "balancer/bors-core": "@dev"
+		"robloach/component-installer": "*",
+		"atelierspierrot/assets-manager": "*",
+		"balancer/bors-core": "@dev"
 	},
 
 	"type-disabled": "component",
 	"type": "bors-assets",
 
-    "autoload": {
+	"autoload": {
 		"classmap": ["classes/"]
-    },
+	},
 
-    "extra": {
-        "component": {
-            "scripts": [
-                "public/jquery.wysibb.js"
-            ],
-            "files": [
-                "public/*",
-                "public/*/*"
-            ]
-        },
-        "assets-dir": "public",
+	"extra": {
+		"component": {
+			"scripts": [
+				"public/jquery.wysibb.js"
+			],
+			"files": [
+				"public/*",
+				"public/*/*"
+			]
+		},
+		"assets-dir": "public",
 		"assets-presets": {
 			"jquery.wysibb": {
 				"jsfiles_footer": "min:/jquery.wysibb.min.js",
 				"require": ["/lang", "/preset", "/theme"]
 			}
 		}
-    }
+	}
 }
