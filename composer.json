@@ -28,7 +28,11 @@
                 "public/jquery.wysibb.js"
             ],
             "files": [
-                "public/lang/*"
+                "public/*",
+                "public/lang/*",
+                "public/preset/*",
+                "public/theme/*",
+                "public/theme/*/*"
             ]
         }
     }
