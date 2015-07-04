@@ -12,12 +12,21 @@
 
 	"require": {
 		"libra/libra-assets-installer": "*",
+        "robloach/component-installer": "*",
         "balancer/bors-core": "@dev"
 	},
 
-	"type": "asset-aware",
+	"type": "component",
 
     "autoload": {
 		"classmap": ["classes/"]
+    },
+
+    "extra": {
+        "component": {
+            "files": [
+                "public/*"
+            ]
+        }
     }
 }
