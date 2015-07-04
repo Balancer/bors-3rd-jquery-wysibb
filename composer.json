@@ -16,7 +16,8 @@
         "balancer/bors-core": "@dev"
 	},
 
-	"type": "component",
+	"type-disabled": "component",
+	"type": "bors-assets",
 
     "autoload": {
 		"classmap": ["classes/"]
@@ -29,11 +30,15 @@
             ],
             "files": [
                 "public/*",
-                "public/lang/*",
-                "public/preset/*",
-                "public/theme/*",
-                "public/theme/*/*"
+                "public/*/*"
             ]
-        }
+        },
+        "assets-dir": "public",
+		"assets-presets": {
+			"jquery.wysibb": {
+				"jsfiles_footer": "min:/jquery.wysibb.min.js",
+				"require": ["/lang", "/preset", "/theme"]
+			}
+		}
     }
 }
