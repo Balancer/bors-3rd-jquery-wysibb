@@ -31,7 +31,8 @@
 			],
 			"files": [
 				"public/*",
-				"public/*/*"
+				"public/*/*",
+				"public/*/*/*"
 			]
 		},
 		"assets-dir": "public",
