@@ -12,7 +12,6 @@
 
 	"require": {
         "balancer/bors-core": "*",
-		"libra/libra-assets-installer": "*",
 		"robloach/component-installer": "*",
 		"atelierspierrot/assets-manager": "*"
 	},
