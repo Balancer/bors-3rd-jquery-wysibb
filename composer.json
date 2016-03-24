@@ -12,8 +12,7 @@
 
 	"require": {
         "balancer/bors-core": "*",
-		"robloach/component-installer": "*",
-		"atelierspierrot/assets-manager": "*"
+		"robloach/component-installer": "*"
 	},
 
 	"type-disabled": "component",
