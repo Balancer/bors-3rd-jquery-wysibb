@@ -9,7 +9,7 @@ class wysibb
 {
 	static function appear($element, $attrs = array())
 	{
-		jquery::load();
+		\B1\jQuery::load();
 
 //		jquery_plugin::assetic_load('wysibb');
 
